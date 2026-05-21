@@ -2,9 +2,12 @@
   "manifest_version": 3,
   "name": "Simple RTL Fixer",
   "version": "1.0",
-  "content_scripts": [{
-    "matches": ["<all_urls>"],
-    "js": ["content.js"],
-    "run_at": "document_idle"
-  }]
+  "permissions": ["activeTab", "scripting"],
+  "action": {
+    "default_title": "Fix RTL",
+    "default_icon": "icon.svg"
+  },
+  "background": {
+    "scripts": ["background.js"]
+  }
 }
