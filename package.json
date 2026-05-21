@@ -1,0 +1,12 @@
+{
+  "name": "simple-rtl-fixer",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "web-ext run --source-dir .",
+    "build": "web-ext build --source-dir . --overwrite-dest"
+  },
+  "devDependencies": {
+    "web-ext": "^8.4.0"
+  }
+}
